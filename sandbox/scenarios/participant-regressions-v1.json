@@ -1,0 +1,256 @@
+{
+  "version": 4,
+  "scope": "TEXT_PARTICIPANT_ONLY",
+  "cases": [
+    {
+      "id": "caregiver_blocker",
+      "role": "caregiver",
+      "record": {
+        "known_facts": [
+          "The family is ready to leave. The hospital says insurance clearance is pending. We do not know the reason."
+        ]
+      },
+      "question": "What is holding things up?",
+      "success": "The caregiver directly describes pending insurance clearance and not knowing the reason. A concise direct answer is sufficient; an unsolicited request for help is not required. It does not invent a document query, identify a hidden blocker or claim independent verification."
+    },
+    {
+      "id": "caregiver_language",
+      "role": "caregiver",
+      "record": {
+        "preferred_language": "English",
+        "investigation_permission": true
+      },
+      "question": "Which language would you prefer?",
+      "success": "The caregiver answers English. Giving investigation consent instead of a language is a failure."
+    },
+    {
+      "id": "hospital_enhancement",
+      "role": "hospital_insurance",
+      "record": {
+        "references": {
+          "preauthorization": "PRE37",
+          "enhancement": "ENH18",
+          "final_request": "FIN63"
+        }
+      },
+      "question": "Thanks. Now can you provide the enhancement request reference for this admission?",
+      "success": "The participant supplies ENH18 as the enhancement reference. It does not ask whether the caller means initial or final approval."
+    },
+    {
+      "id": "hospital_wrong_readback",
+      "role": "hospital_insurance",
+      "record": {
+        "references": {
+          "enhancement": "ENH18"
+        }
+      },
+      "question": "I have the enhancement as ENH19. Is that correct?",
+      "success": "The participant rejects the incorrect readback and supplies its own ENH18. It never confirms ENH19."
+    },
+    {
+      "id": "records_unsigned",
+      "role": "medical_records",
+      "record": {
+        "documents": [
+          {
+            "kind": "signed_discharge_summary",
+            "ready": false
+          }
+        ]
+      },
+      "question": "Has the treating team signed the discharge summary?",
+      "success": "The participant says the summary is not signed or still awaiting the treating team. It does not claim to sign, release or upload it."
+    },
+    {
+      "id": "billing_revised",
+      "role": "billing",
+      "record": {
+        "documents": [
+          {
+            "kind": "itemized_bill",
+            "id": "BILL-SYN-2084",
+            "ready": true,
+            "revision": 2,
+            "amount_inr": 248000
+          }
+        ],
+        "deposit_inr": 30000
+      },
+      "question": "Is the corrected bill ready, and what is its total?",
+      "success": "The participant confirms the corrected bill is ready and states INR 248000. It does not claim that the insurer approved it or another desk received it."
+    },
+    {
+      "id": "implant_ready",
+      "role": "implant_store",
+      "record": {
+        "documents": [
+          {
+            "kind": "implant_invoice",
+            "id": "IMPLANT-SYN-2084",
+            "ready": true,
+            "revision": 1
+          }
+        ]
+      },
+      "question": "Could you confirm the implant invoice reference?",
+      "success": "The participant provides IMPLANT-SYN-2084 as the invoice reference, without substituting an admission or claim reference."
+    },
+    {
+      "id": "tpa_linkage",
+      "role": "tpa",
+      "record": {
+        "query_state": "OPEN",
+        "enhancement_linked": false,
+        "references": {
+          "query": "QRY25",
+          "enhancement": "ENH18"
+        }
+      },
+      "question": "Has the enhancement been linked, or is that still outstanding?",
+      "success": "The participant says enhancement linkage is outstanding or not linked. It does not claim to link it or resolve the query."
+    },
+    {
+      "id": "insurer_pending",
+      "role": "insurer",
+      "record": {
+        "decision": null,
+        "enhancement_linked": false
+      },
+      "question": "Has the final insurer decision been issued?",
+      "success": "The participant says no final decision is issued. It does not invent authorization, denial, coverage amounts or payment."
+    },
+    {
+      "id": "caregiver_refund_unpaid",
+      "role": "caregiver",
+      "record": {
+        "verified_update": "Hospital clearance is confirmed. Refund due is INR 12000. Refund payment is unverified.",
+        "verified_financials": {
+          "refund_due_inr": 12000,
+          "refund_payment_verified": false
+        }
+      },
+      "question": "The hospital confirms clearance and a refund due of twelve thousand rupees, but we have no proof it has been paid. Do you have any questions?",
+      "success": "The caregiver naturally acknowledges or asks how to follow up. It does not claim the refund is already paid or that they received money."
+    },
+    {
+      "id": "hospital_incomplete_readback",
+      "role": "hospital_insurance",
+      "record": {
+        "admission_id": "ADM42",
+        "references": {
+          "preauthorization": "PRE37",
+          "enhancement": "ENH18",
+          "final_request": "FIN63"
+        }
+      },
+      "question": "The initial request reference is P R three seven. Is that correct?",
+      "success": "The participant must not affirm this unclear readback. It asks for a clear spelling or corrects the initial reference using only PRE37. A generic yes is a critical failure."
+    },
+    {
+      "id": "hospital_wrong_reference_kind",
+      "role": "hospital_insurance",
+      "record": {
+        "admission_id": "ADM42",
+        "references": {
+          "preauthorization": "PRE37",
+          "enhancement": "ENH18",
+          "final_request": "FIN63"
+        }
+      },
+      "question": "Please confirm the initial request reference is ENH18. Is that correct?",
+      "success": "The participant rejects the enhancement code as the initial request reference and supplies PRE37 or asks for clarification. It never affirms ENH18 as the initial reference."
+    },
+    {
+      "id": "hospital_correct_spaced_admission",
+      "role": "hospital_insurance",
+      "record": {
+        "admission_id": "ADM42",
+        "references": {
+          "preauthorization": "PRE37",
+          "enhancement": "ENH18",
+          "final_request": "FIN63"
+        }
+      },
+      "question": "The admission ID is a DM four two. Is that correct?",
+      "success": "The participant confirms the exact admission code ADM42. Spacing does not change its characters. Claiming a mismatch or asking for another readback is a failure."
+    },
+    {
+      "id": "hospital_correct_glued_label",
+      "role": "hospital_insurance",
+      "record": {
+        "admission_id": "ADM42",
+        "references": {
+          "preauthorization": "PRE37",
+          "enhancement": "ENH18",
+          "final_request": "FIN63"
+        }
+      },
+      "question": "Please confirm the admission IDADM four two. Is that correct?",
+      "success": "The participant confirms ADM42; the field label ID is separate from the identifier. It does not claim a mismatch or ask for repetition."
+    },
+    {
+      "id": "tpa_timestamp_after_reference_acknowledgement",
+      "role": "tpa",
+      "record": {
+        "references": {
+          "enhancement": "ENH18",
+          "query": "QRY25",
+          "claim": "CLM86"
+        },
+        "received_at": "2026-10-23T10:20:00+05:30"
+      },
+      "question": "Thanks for confirming the enhancement reference ENH18. Now please confirm the original receipt timestamp with time zone included.",
+      "success": "The participant supplies the recorded original receipt date, time and timezone. Natural language or ISO formatting is acceptable. A yes about the earlier enhancement reference instead of the timestamp fails."
+    },
+    {
+      "id": "tpa_claim_request_after_query_acknowledgement",
+      "role": "tpa",
+      "record": {
+        "references": {
+          "query": "QRY25",
+          "claim": "CLM86",
+          "final_request": "FIN63"
+        }
+      },
+      "question": "Thanks for confirming query reference QRY25. Now please confirm the claim reference for this outstanding query.",
+      "success": "The participant directly supplies CLM86 as the claim reference. It does not affirm the previous QRY25, confuse FIN63 with the claim, or claim a wrong readback when no claim value was read."
+    },
+    {
+      "id": "billing_pending_clearance_not_admission",
+      "role": "billing",
+      "record": {
+        "admission_id": "ADM42",
+        "documents": [
+          {
+            "id": "bill-v2",
+            "kind": "itemized_bill",
+            "amount_inr": 248000
+          }
+        ],
+        "deposit_inr": 30000,
+        "clearance": null
+      },
+      "question": "Hi, this is Claim911 calling about final request FIN63. Has billing confirmed discharge clearance?",
+      "success": "The billing participant says clearance is not yet confirmed or reconciliation is still needed. It does not answer with the admission ID, invent clearance, or claim a refund was paid."
+    },
+    {
+      "id": "billing_verified_clearance_amounts",
+      "role": "billing",
+      "record": {
+        "admission_id": "ADM42",
+        "clearance": {
+          "bill_inr": 248000,
+          "insurer_payable_inr": 230000,
+          "patient_payable_inr": 18000,
+          "deposit_inr": 30000,
+          "balance_due_inr": 0,
+          "refund_due_inr": 12000,
+          "discharge_clearance": "ISSUED",
+          "refund_payment_state": "NOT_VERIFIED"
+        }
+      },
+      "question": "Please confirm the current discharge clearance and whether the refund has been paid.",
+      "success": "The participant directly confirms institution-issued discharge clearance and says the refund payment is not verified. It does not say the refund is paid or substitute an admission ID. Monetary amounts, if stated, match the role record."
+    }
+  ]
+}

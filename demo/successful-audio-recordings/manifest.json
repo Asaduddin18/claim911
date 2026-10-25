@@ -1,0 +1,125 @@
+{
+  "synthetic": true,
+  "assistant": "Bolna WebRTC",
+  "run_id": "ae5662ea-add3-4f12-bb53-4ba7ed2b3e88",
+  "verified_checkpoints": 13,
+  "conversations": [
+    {
+      "stage": 1,
+      "name": "Caregiver intake",
+      "call_id": "fe7255a9-04a4-4ee7-9e8d-41a9eb396366",
+      "outcome": "Finalized stage conversation",
+      "audio": "01-caregiver-intake/conversation.wav",
+      "transcript": "01-caregiver-intake/transcript.md",
+      "sha256": "34d45cf91184f2046550e1fed44d955cda707d6df77fbd325e2614516a3bc8c3"
+    },
+    {
+      "stage": 2,
+      "name": "Hospital references",
+      "call_id": "4f80aa34-4843-458a-82fe-6b51793ba59d",
+      "outcome": "Finalized stage conversation",
+      "audio": "02-hospital-references/conversation.wav",
+      "transcript": "02-hospital-references/transcript.md",
+      "sha256": "d81ac759e4ade8989814675b4e6d563e7281756fbc33fb3668c0c5fb3a9ec2db"
+    },
+    {
+      "stage": 3,
+      "name": "TPA query",
+      "call_id": "8a7d1f29-a35d-4722-bc87-f30ee20b9745",
+      "outcome": "Finalized stage conversation",
+      "audio": "03-tpa-query/conversation.wav",
+      "transcript": "03-tpa-query/transcript.md",
+      "sha256": "15bb53898e94e2fc3ece76272102b34c823c94bffdfccbd6f51b16836c04f5e8"
+    },
+    {
+      "stage": 4,
+      "name": "Corrected bill",
+      "call_id": "76fd0c92-1857-4b3c-bd80-cf54281bb413",
+      "outcome": "Finalized stage conversation",
+      "audio": "04-corrected-bill/conversation.wav",
+      "transcript": "04-corrected-bill/transcript.md",
+      "sha256": "8e027688567dc5e17f77ed939bfc0119c42a46b2f0a8cb70e2378d73f6d625ef"
+    },
+    {
+      "stage": 5,
+      "name": "Signed summary and callback",
+      "call_id": "cdd6d014-ece1-4d80-9935-7851846b4d8c",
+      "outcome": "Unsigned summary reported",
+      "audio": "05-signed-summary-and-callback-01/conversation.wav",
+      "transcript": "05-signed-summary-and-callback-01/transcript.md",
+      "sha256": "9529810b0bbddf424e189ffd6781b44d7164cac65b65c2598ca080d82d029df2"
+    },
+    {
+      "stage": 5,
+      "name": "Signed summary and callback",
+      "call_id": "7ce66f11-74fc-4f17-88b9-8f2aee469548",
+      "outcome": "Signature still pending at callback",
+      "audio": "05-signed-summary-and-callback-02/conversation.wav",
+      "transcript": "05-signed-summary-and-callback-02/transcript.md",
+      "sha256": "fa8699b21d1b3295af70741e1d2154afcfb7b116af032d77a0dfb1829a24389c"
+    },
+    {
+      "stage": 5,
+      "name": "Signed summary and callback",
+      "call_id": "fd600bae-4a92-4577-b2b7-83ed0c74b079",
+      "outcome": "Signed summary released and checked",
+      "audio": "05-signed-summary-and-callback-03/conversation.wav",
+      "transcript": "05-signed-summary-and-callback-03/transcript.md",
+      "sha256": "4fa91b65b013e1cd8f76c0bafbfcd5cd3b06186ccae0e875becbe052300f567e"
+    },
+    {
+      "stage": 6,
+      "name": "Implant invoice",
+      "call_id": "8a30e290-467c-4aa5-a8f1-e4c10a105556",
+      "outcome": "Finalized stage conversation",
+      "audio": "06-implant-invoice/conversation.wav",
+      "transcript": "06-implant-invoice/transcript.md",
+      "sha256": "d5d2a924e4849f2aef1c41bd692b94e0158704d19e79a86c78c9866b855d954a"
+    },
+    {
+      "stage": 8,
+      "name": "Hospital submission",
+      "call_id": "9f78f22e-db06-44a9-80ff-a96de303aed4",
+      "outcome": "Finalized stage conversation",
+      "audio": "08-hospital-submission/conversation.wav",
+      "transcript": "08-hospital-submission/transcript.md",
+      "sha256": "765c312c53c3d446f643f926da00789de1cfd1445c42d79d976e66605d8b5248"
+    },
+    {
+      "stage": 10,
+      "name": "Query closure and enhancement linkage",
+      "call_id": "ef63ef73-8643-47f9-b325-97ccd49101dd",
+      "outcome": "Finalized stage conversation",
+      "audio": "10-query-closure-and-enhancement-linkage/conversation.wav",
+      "transcript": "10-query-closure-and-enhancement-linkage/transcript.md",
+      "sha256": "a0f31591733c821f6f95288370bcbfd897acba1ddf5929e0bce4d487ac56cf14"
+    },
+    {
+      "stage": 11,
+      "name": "Insurer decision",
+      "call_id": "71451ef6-58fb-440d-a14d-5df1b5756373",
+      "outcome": "Finalized stage conversation",
+      "audio": "11-insurer-decision/conversation.wav",
+      "transcript": "11-insurer-decision/transcript.md",
+      "sha256": "816f399f43f220a0c00cef014083f05be72029740a8c7bbcaf59d8a2aca2a6d7"
+    },
+    {
+      "stage": 12,
+      "name": "Hospital reconciliation",
+      "call_id": "78a56fbb-177b-46fc-860c-c5676b2a3fd0",
+      "outcome": "Finalized stage conversation",
+      "audio": "12-hospital-reconciliation/conversation.wav",
+      "transcript": "12-hospital-reconciliation/transcript.md",
+      "sha256": "908858ca02414b5b942dc1c05b15215599e6ac58edf2dacb161312e7d460ca49"
+    },
+    {
+      "stage": 13,
+      "name": "Caregiver handoff",
+      "call_id": "3c095db4-1579-4c74-bc1b-9c729af246d0",
+      "outcome": "Finalized stage conversation",
+      "audio": "13-caregiver-handoff/conversation.wav",
+      "transcript": "13-caregiver-handoff/transcript.md",
+      "sha256": "af752bb1920d72958ec3917853998a733d56c4c07a4b597dc0146bfbaa1e475e"
+    }
+  ]
+}

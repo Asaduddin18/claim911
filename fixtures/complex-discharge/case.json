@@ -1,0 +1,171 @@
+{
+  "scenario_id": "SYNTH-DISCHARGE-003",
+  "synthetic": true,
+  "status": "INSTITUTION_AND_COORDINATOR_MANUAL_REHEARSAL_VERIFIED_COMPLEX_VOICE_PENDING",
+  "patient_id": "DEMO-PATIENT-84",
+  "admission_id": "ADM42",
+  "organizations": [
+    "Demo Lotus Hospital",
+    "Demo Bridge TPA",
+    "Demo Shield Insurance"
+  ],
+  "references": {
+    "preauthorization": "INITIAL-123",
+    "enhancement": "ENH18",
+    "final_request": "FIN63",
+    "query": "QRY25",
+    "claim": "CLM86"
+  },
+  "amounts_inr": {
+    "initial_provisional_authorization": 150000,
+    "enhancement_requested_total": 250000,
+    "final_bill_v1": 252000,
+    "duplicate_charge_removed": 4000,
+    "final_bill_v2": 248000,
+    "scripted_insurer_payable": 230000,
+    "patient_payable": 18000,
+    "deposit_paid": 30000,
+    "refund_due": 12000
+  },
+  "clock": {
+    "mode": "FIXED_SYNTHETIC_CLOCK",
+    "received_at": "2026-10-23T10:20:00+05:30",
+    "demo_start": "2026-10-23T11:40:00+05:30",
+    "target": "2026-10-23T13:20:00+05:30",
+    "reset_on_query": false
+  },
+  "private_views": {
+    "caregiver": {
+      "knows": [
+        "medically cleared",
+        "deposit paid",
+        "hospital says insurance pending"
+      ],
+      "documents": [
+        "deposit_receipt"
+      ]
+    },
+    "hospital_insurance_desk": {
+      "knows": [
+        "initial approval exists",
+        "enhancement and final packet uploaded",
+        "no final authorization"
+      ],
+      "believes": "TPA reviewing latest packet",
+      "documents": [
+        "upload_ack_v1"
+      ]
+    },
+    "tpa_desk": {
+      "knows": [
+        "v1 received at 10:20",
+        "query QRY25 outstanding",
+        "enhancement not linked"
+      ],
+      "requires": [
+        "itemized_bill_v2",
+        "signed_discharge_summary",
+        "implant_invoice"
+      ]
+    },
+    "billing": {
+      "knows": [
+        "duplicate INR 4000 removed",
+        "bill v2 INR 248000",
+        "insurance desk uploaded v1"
+      ],
+      "documents": [
+        "itemized_bill_v2"
+      ]
+    },
+    "medical_records": {
+      "knows": [
+        "summary awaiting treating team signature"
+      ],
+      "documents": [
+        "unsigned_discharge_summary"
+      ]
+    },
+    "implant_store": {
+      "documents": [
+        "implant_invoice"
+      ],
+      "release_gate": "admission and issue record match"
+    },
+    "insurer_reviewer": {
+      "decision_gate": "Complete current packet and enhancement linked"
+    }
+  },
+  "tasks": [
+    {
+      "id": "discover_query",
+      "owner": "tpa_desk",
+      "requires": []
+    },
+    {
+      "id": "obtain_bill_v2",
+      "owner": "billing",
+      "requires": [
+        "discover_query"
+      ]
+    },
+    {
+      "id": "obtain_signed_summary",
+      "owner": "medical_records",
+      "requires": [
+        "discover_query"
+      ]
+    },
+    {
+      "id": "obtain_implant_invoice",
+      "owner": "implant_store",
+      "requires": [
+        "discover_query"
+      ]
+    },
+    {
+      "id": "authorize_packet",
+      "owner": "caregiver",
+      "requires": [
+        "obtain_bill_v2",
+        "obtain_signed_summary",
+        "obtain_implant_invoice"
+      ]
+    },
+    {
+      "id": "submit_response",
+      "owner": "hospital_insurance_desk",
+      "requires": [
+        "authorize_packet"
+      ]
+    },
+    {
+      "id": "verify_receipt",
+      "owner": "tpa_desk",
+      "requires": [
+        "submit_response"
+      ]
+    },
+    {
+      "id": "link_enhancement",
+      "owner": "tpa_desk",
+      "requires": [
+        "verify_receipt"
+      ]
+    },
+    {
+      "id": "final_decision",
+      "owner": "insurer_reviewer",
+      "requires": [
+        "link_enhancement"
+      ]
+    },
+    {
+      "id": "reconcile_discharge",
+      "owner": "billing",
+      "requires": [
+        "final_decision"
+      ]
+    }
+  ]
+}

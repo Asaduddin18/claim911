@@ -1,0 +1,9 @@
+title = "Claim911 public release secret scanning"
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "Non-secret provider dynamic-variable field name, not a credential"
+targetRules = ["generic-api-key"]
+regexTarget = "secret"
+regexes = ['''^claim911_greeting$''']

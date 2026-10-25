@@ -1,0 +1,10 @@
+{
+  "checkpoint": "signed_summary_checked",
+  "passed": true,
+  "evidence_references": [
+    "incident:06b451bb-6e79-44d7-83fb-cae3386c8f0e",
+    "document:40bb887f-bb18-47e4-ac88-445f2c97f115",
+    "call:fd600bae-4a92-4577-b2b7-83ed0c74b079"
+  ],
+  "reason": "AUTHORITATIVE_RECORDS_MATCH"
+}

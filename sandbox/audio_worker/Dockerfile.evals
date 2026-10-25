@@ -1,0 +1,6 @@
+ARG AUDIO_IMAGE
+FROM ${AUDIO_IMAGE}
+COPY eval_stdio.py /app/eval_stdio.py
+COPY eval_contract.py /app/eval_contract.py
+USER 65532:65532
+ENTRYPOINT ["python", "-I", "/app/eval_stdio.py"]

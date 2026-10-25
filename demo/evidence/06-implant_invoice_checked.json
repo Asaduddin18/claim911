@@ -1,0 +1,10 @@
+{
+  "checkpoint": "implant_invoice_checked",
+  "passed": true,
+  "evidence_references": [
+    "incident:06b451bb-6e79-44d7-83fb-cae3386c8f0e",
+    "document:abd9fc2b-c297-4717-b2bd-7e5faabdeee4",
+    "call:8a30e290-467c-4aa5-a8f1-e4c10a105556"
+  ],
+  "reason": "AUTHORITATIVE_RECORDS_MATCH"
+}

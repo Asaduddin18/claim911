@@ -1,0 +1,9 @@
+{
+  "checkpoint": "hospital_dispatch_recorded",
+  "passed": true,
+  "evidence_references": [
+    "incident:06b451bb-6e79-44d7-83fb-cae3386c8f0e",
+    "call:9f78f22e-db06-44a9-80ff-a96de303aed4"
+  ],
+  "reason": "AUTHORITATIVE_RECORDS_MATCH"
+}

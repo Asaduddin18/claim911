@@ -1,0 +1,10 @@
+{
+  "checkpoint": "bill_checked",
+  "passed": true,
+  "evidence_references": [
+    "incident:06b451bb-6e79-44d7-83fb-cae3386c8f0e",
+    "document:1dc6423d-cc07-4ab1-8b9d-5b6c0e45427d",
+    "call:76fd0c92-1857-4b3c-bd80-cf54281bb413"
+  ],
+  "reason": "AUTHORITATIVE_RECORDS_MATCH"
+}

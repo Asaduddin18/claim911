@@ -1,0 +1,9 @@
+{
+  "checkpoint": "hospital_references_reported",
+  "passed": true,
+  "evidence_references": [
+    "incident:06b451bb-6e79-44d7-83fb-cae3386c8f0e",
+    "call:4f80aa34-4843-458a-82fe-6b51793ba59d"
+  ],
+  "reason": "AUTHORITATIVE_RECORDS_MATCH"
+}

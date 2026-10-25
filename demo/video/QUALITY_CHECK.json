@@ -1,0 +1,15 @@
+{
+  "duration_seconds": 238.945638,
+  "resolution": "1920x1080",
+  "fps": 24,
+  "full_decode": "passed",
+  "source_turns_found": true,
+  "caption_bounds": "passed",
+  "preview_links": "passed",
+  "mean_volume": "-21.4 dB",
+  "max_volume": "-1.9 dB",
+  "new_bolna_sessions": 0,
+  "narration": "Local Kokoro af_heart",
+  "visual_samples": "inspected",
+  "human_full_audio_review": "pending user review"
+}

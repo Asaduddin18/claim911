@@ -1,0 +1,10 @@
+{
+  "checkpoint": "claims_query_discovered",
+  "passed": true,
+  "evidence_references": [
+    "incident:06b451bb-6e79-44d7-83fb-cae3386c8f0e",
+    "call:8a7d1f29-a35d-4722-bc87-f30ee20b9745",
+    "document:03e0bad3-83c4-4f80-a1dc-401148e1ee42"
+  ],
+  "reason": "AUTHORITATIVE_RECORDS_MATCH"
+}

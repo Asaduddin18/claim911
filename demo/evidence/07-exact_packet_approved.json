@@ -1,0 +1,9 @@
+{
+  "checkpoint": "exact_packet_approved",
+  "passed": true,
+  "evidence_references": [
+    "incident:06b451bb-6e79-44d7-83fb-cae3386c8f0e",
+    "event:67102"
+  ],
+  "reason": "AUTHORITATIVE_RECORDS_MATCH"
+}

@@ -1,0 +1,219 @@
+1
+00:00:00,000 --> 00:00:00,899
+This is Priya.
+
+2
+00:00:00,899 --> 00:00:04,302
+Someone in her family is ready to leave the hospital.
+
+3
+00:00:04,302 --> 00:00:08,477
+But discharge is stuck on one phrase: insurance approval pending.
+
+4
+00:00:08,477 --> 00:00:09,890
+She needs two answers.
+
+5
+00:00:09,890 --> 00:00:13,044
+Can we leave, and what do we still owe?
+
+6
+00:00:13,044 --> 00:00:18,619
+She opens Claim911, explains the problem once, and allows it to investigate.
+
+7
+00:00:18,619 --> 00:00:23,231
+Let’s follow what happens next in this synthetic case.
+
+8
+00:00:23,231 --> 00:00:30,619
+They told us final insurance clearance is pending, but we don’t know which approval or document is
+
+9
+00:00:30,619 --> 00:00:31,223
+missing.
+
+10
+00:00:31,223 --> 00:00:38,131
+We are ready to leave and need Claim911 to check with the hospital and the insurer.
+
+11
+00:00:38,131 --> 00:00:44,776
+First, Claim911 calls the hospital insurance desk, then the claims administrator, or TPA.
+
+12
+00:00:44,776 --> 00:00:51,944
+The TPA needs three documents, and an existing request for additional cover has not been linked.
+
+13
+00:00:51,944 --> 00:00:56,551
+An earlier approval is not final discharge clearance.
+
+14
+00:00:56,551 --> 00:00:58,995
+There are three owners to coordinate.
+
+15
+00:00:58,995 --> 00:01:01,042
+Billing has the corrected bill.
+
+16
+00:01:01,042 --> 00:01:03,948
+Medical records holds the discharge summary.
+
+17
+00:01:03,948 --> 00:01:06,193
+The implant store has the invoice.
+
+18
+00:01:06,193 --> 00:01:13,116
+Priya can also upload receipts herself; the portal keeps uploaded and verified states separate.
+
+19
+00:01:13,117 --> 00:01:18,823
+Claim911 asks medical records: is the discharge summary signed?
+
+20
+00:01:18,823 --> 00:01:24,211
+No, the discharge summary is awaiting the treating team’s signature.
+
+21
+00:01:24,211 --> 00:01:29,774
+Claim911 keeps the unsigned summary pending and follows up with medical records.
+
+22
+00:01:29,774 --> 00:01:33,947
+Later, the signed version is released, uploaded and checked.
+
+23
+00:01:33,947 --> 00:01:40,648
+Together with the corrected bill and implant invoice, the response packet is now ready.
+
+24
+00:01:40,648 --> 00:01:46,087
+Now Priya sees exactly what will be shared, with whom, and which versions.
+
+25
+00:01:46,087 --> 00:01:47,925
+She approves that packet.
+
+26
+00:01:47,925 --> 00:01:51,380
+If a document changes, Claim911 must ask again.
+
+27
+00:01:51,380 --> 00:01:54,823
+It can now ask the hospital to submit.
+
+28
+00:01:54,823 --> 00:02:00,789
+Hi, this is Claim911 calling about final request F, I, N, six, three.
+
+29
+00:02:00,789 --> 00:02:04,595
+Can you submit the approved response packet?
+
+30
+00:02:04,845 --> 00:02:09,389
+The approved response packet has been dispatched.
+
+31
+00:02:09,389 --> 00:02:12,606
+Dispatch reference HSP01.
+
+32
+00:02:12,356 --> 00:02:13,910
+Sent is not received.
+
+33
+00:02:13,910 --> 00:02:19,534
+Claim911 checks the TPA’s receiving-side record against the approved packet.
+
+34
+00:02:19,534 --> 00:02:28,324
+Receipt is confirmed, but the claim is still pending: the query and additional-cover request must be resolved.
+
+35
+00:02:28,324 --> 00:02:29,064
+Understood.
+
+36
+00:02:29,064 --> 00:02:35,597
+Please resolve the query and link the existing enhancement E, N, H, one, eight using the received
+
+37
+00:02:35,597 --> 00:02:37,214
+response in your system.
+
+38
+00:02:37,214 --> 00:02:40,784
+Could you tell me the actual result after doing this?
+
+39
+00:02:41,034 --> 00:02:49,234
+ENH18 is now linked and the query is marked answered, with the claim decision still pending.
+
+40
+00:02:48,984 --> 00:02:55,528
+With the query answered and the additional cover linked, the insurer issues an authorization.
+
+41
+00:02:55,528 --> 00:03:02,354
+The hospital then reconciles the bill and deposit, and issues administrative discharge clearance.
+
+42
+00:03:02,354 --> 00:03:06,594
+Only now can Claim911 give Priya a verified answer.
+
+43
+00:03:06,593 --> 00:03:12,146
+The hospital confirmed your discharge and issued a final bill of INR 248,000.
+
+44
+00:03:12,146 --> 00:03:15,319
+The insurer approved payment of INR 230,000.
+
+45
+00:03:15,319 --> 00:03:17,122
+Your share is INR 18,000.
+
+46
+00:03:17,122 --> 00:03:21,521
+You paid a deposit of INR 30,000, so the balance due is zero.
+
+47
+00:03:21,521 --> 00:03:26,209
+The refund due is INR 12,000 but it is not yet confirmed as paid.
+
+48
+00:03:26,209 --> 00:03:29,815
+Shall I explain the billing details next?
+
+49
+00:03:29,816 --> 00:03:32,159
+Here is what changed for the family.
+
+50
+00:03:32,159 --> 00:03:33,852
+No balance remains to pay.
+
+51
+00:03:33,852 --> 00:03:36,131
+Twelve thousand rupees is due back.
+
+52
+00:03:36,131 --> 00:03:42,967
+The portal shows the supporting sources, and keeps refund payment open until there is evidence.
+
+53
+00:03:42,967 --> 00:03:48,107
+That is Claim911: Bolna conversations connected to a controlled workflow.
+
+54
+00:03:48,107 --> 00:03:55,290
+It finds the blocker, coordinates the people and documents, asks permission, and verifies the outcome.
+
+55
+00:03:55,290 --> 00:03:58,828
+So families can focus on their loved one.

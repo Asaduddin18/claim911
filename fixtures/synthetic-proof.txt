@@ -1,0 +1,10 @@
+CLAIM911 SYNTHETIC DOCUMENT
+
+Purpose: browser upload and preview verification.
+Patient: Demo Patient A
+Request type: final discharge authorization
+Reference: HOSP-FINAL-1042
+
+This file is a test note. It is not an insurer acknowledgment,
+proof of insurance approval, or evidence of a real patient's care.
+Uploading this document must leave its status unverified.

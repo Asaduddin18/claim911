@@ -1,0 +1,2 @@
+# Isolated Python 3.12 environment; does not replace the verified backend runtime.
+pipecat-ai[azure,evals,webrtc]==1.13.0

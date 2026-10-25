@@ -1,0 +1,222 @@
+{
+  "duration_seconds": 238.828,
+  "run_id": "ae5662ea-add3-4f12-bb53-4ba7ed2b3e88",
+  "narration": "Local Kokoro-82M, af_heart, English, speed 0.96",
+  "new_bolna_sessions": 0,
+  "scenes": [
+    {
+      "id": "01",
+      "act": 0,
+      "title": "Can we leave? What do we owe?",
+      "kind": "board",
+      "start": 0,
+      "duration": 13.045,
+      "text": "This is Priya. Someone in her family is ready to leave the hospital. But discharge is stuck on one phrase: insurance approval pending. She needs two answers. Can we leave, and what do we still owe?",
+      "call_excerpts": []
+    },
+    {
+      "id": "02",
+      "act": 0,
+      "title": "Priya explains the problem once.",
+      "kind": "portal",
+      "start": 13.045,
+      "duration": 10.186,
+      "text": "She opens Claim911, explains the problem once, and allows it to investigate. Let\u2019s follow what happens next in this synthetic case.",
+      "call_excerpts": []
+    },
+    {
+      "id": "03",
+      "act": 0,
+      "title": "Caregiver intake",
+      "kind": "call",
+      "start": 23.231,
+      "duration": 14.9,
+      "text": null,
+      "call_excerpts": [
+        {
+          "call_id": "fe7255a9-04a4-4ee7-9e8d-41a9eb396366",
+          "original_turn": "01",
+          "text": "they told us final insurance clearance is pending but we don't know which approval or document is missing we are ready to leave and need claim nine eleven to check with the hospital and the insurer",
+          "speaker": "Synthetic participant",
+          "full_conversation": "../successful-audio-recordings/01-caregiver-intake/conversation.wav"
+        }
+      ]
+    },
+    {
+      "id": "04",
+      "act": 0,
+      "title": "\u201cPending\u201d becomes a specific problem.",
+      "kind": "board",
+      "start": 38.131,
+      "duration": 18.421,
+      "text": "First, Claim911 calls the hospital insurance desk, then the claims administrator, or TPA. The TPA needs three documents, and an existing request for additional cover has not been linked. An earlier approval is not final discharge clearance.",
+      "call_excerpts": []
+    },
+    {
+      "id": "05",
+      "act": 1,
+      "title": "Three documents. Three owners.",
+      "kind": "portal",
+      "start": 56.552,
+      "duration": 16.565,
+      "text": "There are three owners to coordinate. Billing has the corrected bill. Medical records holds the discharge summary. The implant store has the invoice. Priya can also upload receipts herself; the portal keeps uploaded and verified states separate.",
+      "call_excerpts": []
+    },
+    {
+      "id": "06",
+      "act": 1,
+      "title": "Is the discharge summary signed?",
+      "kind": "summary",
+      "start": 73.117,
+      "duration": 5.706,
+      "text": "Claim911 asks medical records: is the discharge summary signed?",
+      "call_excerpts": []
+    },
+    {
+      "id": "07",
+      "act": 1,
+      "title": "Hospital medical records",
+      "kind": "call",
+      "start": 78.823,
+      "duration": 5.388,
+      "text": null,
+      "call_excerpts": [
+        {
+          "call_id": "cdd6d014-ece1-4d80-9935-7851846b4d8c",
+          "original_turn": "01",
+          "text": "no the discharge summary is awaiting the treating team's signature",
+          "speaker": "Synthetic participant",
+          "full_conversation": "../successful-audio-recordings/05-signed-summary-and-callback-01/conversation.wav"
+        }
+      ]
+    },
+    {
+      "id": "08",
+      "act": 1,
+      "title": "Follow up. Check the released document.",
+      "kind": "board",
+      "start": 84.211,
+      "duration": 16.437,
+      "text": "Claim911 keeps the unsigned summary pending and follows up with medical records. Later, the signed version is released, uploaded and checked. Together with the corrected bill and implant invoice, the response packet is now ready.",
+      "call_excerpts": []
+    },
+    {
+      "id": "09",
+      "act": 2,
+      "title": "Priya controls what gets shared.",
+      "kind": "portal",
+      "start": 100.648,
+      "duration": 14.175,
+      "text": "Now Priya sees exactly what will be shared, with whom, and which versions. She approves that packet. If a document changes, Claim911 must ask again. It can now ask the hospital to submit.",
+      "call_excerpts": []
+    },
+    {
+      "id": "10",
+      "act": 2,
+      "title": "Hospital insurance desk",
+      "kind": "call",
+      "start": 114.823,
+      "duration": 17.534,
+      "text": null,
+      "call_excerpts": [
+        {
+          "call_id": "9f78f22e-db06-44a9-80ff-a96de303aed4",
+          "original_turn": "00",
+          "text": "Hi, this is Claim911 calling about final request F, I, N, six, three. Can you submit the approved response packet?",
+          "speaker": "Claim911 \u00b7 Bolna",
+          "full_conversation": "../successful-audio-recordings/08-hospital-submission/conversation.wav"
+        },
+        {
+          "call_id": "9f78f22e-db06-44a9-80ff-a96de303aed4",
+          "original_turn": "01",
+          "text": "the approved response packet has been dispatched dispatch reference h s p zero one",
+          "speaker": "Synthetic participant",
+          "full_conversation": "../successful-audio-recordings/08-hospital-submission/conversation.wav"
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "act": 2,
+      "title": "Sent is not the same as received.",
+      "kind": "board",
+      "start": 132.357,
+      "duration": 15.967,
+      "text": "Sent is not received. Claim911 checks the TPA\u2019s receiving-side record against the approved packet. Receipt is confirmed, but the claim is still pending: the query and additional-cover request must be resolved.",
+      "call_excerpts": []
+    },
+    {
+      "id": "12",
+      "act": 2,
+      "title": "TPA claims desk",
+      "kind": "call",
+      "start": 148.324,
+      "duration": 20.66,
+      "text": null,
+      "call_excerpts": [
+        {
+          "call_id": "ef63ef73-8643-47f9-b325-97ccd49101dd",
+          "original_turn": "04",
+          "text": "Understood. Please resolve the query and link the existing enhancement E, N, H, one, eight using the received response in your system. Could you tell me the actual result after doing this?",
+          "speaker": "Claim911 \u00b7 Bolna",
+          "full_conversation": "../successful-audio-recordings/10-query-closure-and-enhancement-linkage/conversation.wav"
+        },
+        {
+          "call_id": "ef63ef73-8643-47f9-b325-97ccd49101dd",
+          "original_turn": "05",
+          "text": "enh one eight is now linked and the query is marked answered with the claim decision still pending",
+          "speaker": "Synthetic participant",
+          "full_conversation": "../successful-audio-recordings/10-query-closure-and-enhancement-linkage/conversation.wav"
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "act": 3,
+      "title": "The institutions confirm the outcome.",
+      "kind": "board",
+      "start": 168.984,
+      "duration": 17.61,
+      "text": "With the query answered and the additional cover linked, the insurer issues an authorization. The hospital then reconciles the bill and deposit, and issues administrative discharge clearance. Only now can Claim911 give Priya a verified answer.",
+      "call_excerpts": []
+    },
+    {
+      "id": "14",
+      "act": 3,
+      "title": "Caregiver handoff",
+      "kind": "call",
+      "start": 186.594,
+      "duration": 23.222,
+      "text": null,
+      "call_excerpts": [
+        {
+          "call_id": "3c095db4-1579-4c74-bc1b-9c729af246d0",
+          "original_turn": "02",
+          "text": "The hospital confirmed your discharge and issued a final bill of INR 248,000. The insurer approved payment of INR 230,000. Your share is INR 18,000. You paid a deposit of INR 30,000, so the balance due is zero. The refund due is INR 12,000 but it is not yet confirmed as paid. Shall I explain the billing details next?",
+          "speaker": "Claim911 \u00b7 Bolna",
+          "full_conversation": "../successful-audio-recordings/13-caregiver-handoff/conversation.wav"
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "act": 3,
+      "title": "No balance due. One open follow-up.",
+      "kind": "portal",
+      "start": 209.816,
+      "duration": 13.151,
+      "text": "Here is what changed for the family. No balance remains to pay. Twelve thousand rupees is due back. The portal shows the supporting sources, and keeps refund payment open until there is evidence.",
+      "call_excerpts": []
+    },
+    {
+      "id": "16",
+      "act": 3,
+      "title": "Less chasing. More clarity.",
+      "kind": "board",
+      "start": 222.967,
+      "duration": 15.861,
+      "text": "That is Claim911: Bolna conversations connected to a controlled workflow. It finds the blocker, coordinates the people and documents, asks permission, and verifies the outcome. So families can focus on their loved one.",
+      "call_excerpts": []
+    }
+  ]
+}

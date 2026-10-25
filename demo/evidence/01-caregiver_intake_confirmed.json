@@ -1,0 +1,12 @@
+{
+  "checkpoint": "caregiver_intake_confirmed",
+  "passed": true,
+  "evidence_references": [
+    "incident:06b451bb-6e79-44d7-83fb-cae3386c8f0e",
+    "event:66385",
+    "event:66386",
+    "event:66392",
+    "call:fe7255a9-04a4-4ee7-9e8d-41a9eb396366"
+  ],
+  "reason": "AUTHORITATIVE_RECORDS_MATCH"
+}

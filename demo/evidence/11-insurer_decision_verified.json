@@ -1,0 +1,11 @@
+{
+  "checkpoint": "insurer_decision_verified",
+  "passed": true,
+  "evidence_references": [
+    "incident:06b451bb-6e79-44d7-83fb-cae3386c8f0e",
+    "call:71451ef6-58fb-440d-a14d-5df1b5756373",
+    "event:67131",
+    "document:b50fa0b5-bcce-47c8-a6a1-c88b4237d108"
+  ],
+  "reason": "AUTHORITATIVE_RECORDS_MATCH"
+}

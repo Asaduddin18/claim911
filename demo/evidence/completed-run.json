@@ -1,0 +1,158 @@
+{
+  "run_id": "ae5662ea-add3-4f12-bb53-4ba7ed2b3e88",
+  "incident_id": "06b451bb-6e79-44d7-83fb-cae3386c8f0e",
+  "state": "COMPLETED",
+  "verified_checkpoints": 13,
+  "required_checkpoints": 13,
+  "scenario_version": 3,
+  "assistant_transport": "bolna-browser",
+  "phone_dispatch": false,
+  "synthetic": true,
+  "full_case_completed": true,
+  "execution_resumed": true,
+  "independent_evaluation": {
+    "incident_id": "06b451bb-6e79-44d7-83fb-cae3386c8f0e",
+    "passed": true,
+    "checks": [
+      {
+        "checkpoint": "caregiver_intake_confirmed",
+        "passed": true,
+        "evidence_references": [
+          "incident:06b451bb-6e79-44d7-83fb-cae3386c8f0e",
+          "event:66385",
+          "event:66386",
+          "event:66392",
+          "call:fe7255a9-04a4-4ee7-9e8d-41a9eb396366"
+        ],
+        "reason": "AUTHORITATIVE_RECORDS_MATCH"
+      },
+      {
+        "checkpoint": "hospital_references_reported",
+        "passed": true,
+        "evidence_references": [
+          "incident:06b451bb-6e79-44d7-83fb-cae3386c8f0e",
+          "call:4f80aa34-4843-458a-82fe-6b51793ba59d"
+        ],
+        "reason": "AUTHORITATIVE_RECORDS_MATCH"
+      },
+      {
+        "checkpoint": "claims_query_discovered",
+        "passed": true,
+        "evidence_references": [
+          "incident:06b451bb-6e79-44d7-83fb-cae3386c8f0e",
+          "call:8a7d1f29-a35d-4722-bc87-f30ee20b9745",
+          "document:03e0bad3-83c4-4f80-a1dc-401148e1ee42"
+        ],
+        "reason": "AUTHORITATIVE_RECORDS_MATCH"
+      },
+      {
+        "checkpoint": "bill_checked",
+        "passed": true,
+        "evidence_references": [
+          "incident:06b451bb-6e79-44d7-83fb-cae3386c8f0e",
+          "document:1dc6423d-cc07-4ab1-8b9d-5b6c0e45427d",
+          "call:76fd0c92-1857-4b3c-bd80-cf54281bb413"
+        ],
+        "reason": "AUTHORITATIVE_RECORDS_MATCH"
+      },
+      {
+        "checkpoint": "signed_summary_checked",
+        "passed": true,
+        "evidence_references": [
+          "incident:06b451bb-6e79-44d7-83fb-cae3386c8f0e",
+          "document:40bb887f-bb18-47e4-ac88-445f2c97f115",
+          "call:fd600bae-4a92-4577-b2b7-83ed0c74b079"
+        ],
+        "reason": "AUTHORITATIVE_RECORDS_MATCH"
+      },
+      {
+        "checkpoint": "implant_invoice_checked",
+        "passed": true,
+        "evidence_references": [
+          "incident:06b451bb-6e79-44d7-83fb-cae3386c8f0e",
+          "document:abd9fc2b-c297-4717-b2bd-7e5faabdeee4",
+          "call:8a30e290-467c-4aa5-a8f1-e4c10a105556"
+        ],
+        "reason": "AUTHORITATIVE_RECORDS_MATCH"
+      },
+      {
+        "checkpoint": "exact_packet_approved",
+        "passed": true,
+        "evidence_references": [
+          "incident:06b451bb-6e79-44d7-83fb-cae3386c8f0e",
+          "event:67102"
+        ],
+        "reason": "AUTHORITATIVE_RECORDS_MATCH"
+      },
+      {
+        "checkpoint": "hospital_dispatch_recorded",
+        "passed": true,
+        "evidence_references": [
+          "incident:06b451bb-6e79-44d7-83fb-cae3386c8f0e",
+          "call:9f78f22e-db06-44a9-80ff-a96de303aed4"
+        ],
+        "reason": "AUTHORITATIVE_RECORDS_MATCH"
+      },
+      {
+        "checkpoint": "recipient_receipt_verified",
+        "passed": true,
+        "evidence_references": [
+          "incident:06b451bb-6e79-44d7-83fb-cae3386c8f0e",
+          "receipt:d30620f4-b3e0-4257-bf9d-a0f53343b20b"
+        ],
+        "reason": "AUTHORITATIVE_RECORDS_MATCH"
+      },
+      {
+        "checkpoint": "query_and_enhancement_verified",
+        "passed": true,
+        "evidence_references": [
+          "incident:06b451bb-6e79-44d7-83fb-cae3386c8f0e",
+          "call:ef63ef73-8643-47f9-b325-97ccd49101dd",
+          "receipt:d30620f4-b3e0-4257-bf9d-a0f53343b20b",
+          "event:67119",
+          "document:473ec422-2ac2-41f2-bd74-d5bda27371db"
+        ],
+        "reason": "AUTHORITATIVE_RECORDS_MATCH"
+      },
+      {
+        "checkpoint": "insurer_decision_verified",
+        "passed": true,
+        "evidence_references": [
+          "incident:06b451bb-6e79-44d7-83fb-cae3386c8f0e",
+          "call:71451ef6-58fb-440d-a14d-5df1b5756373",
+          "event:67131",
+          "document:b50fa0b5-bcce-47c8-a6a1-c88b4237d108"
+        ],
+        "reason": "AUTHORITATIVE_RECORDS_MATCH"
+      },
+      {
+        "checkpoint": "hospital_reconciliation_verified",
+        "passed": true,
+        "evidence_references": [
+          "incident:06b451bb-6e79-44d7-83fb-cae3386c8f0e",
+          "call:78a56fbb-177b-46fc-860c-c5676b2a3fd0",
+          "event:67541",
+          "document:4599efb1-10f5-4429-b7f6-7d4f9f94a11a"
+        ],
+        "reason": "AUTHORITATIVE_RECORDS_MATCH"
+      },
+      {
+        "checkpoint": "caregiver_handoff_completed",
+        "passed": true,
+        "evidence_references": [
+          "incident:06b451bb-6e79-44d7-83fb-cae3386c8f0e",
+          "call:78a56fbb-177b-46fc-860c-c5676b2a3fd0",
+          "event:67541",
+          "document:4599efb1-10f5-4429-b7f6-7d4f9f94a11a",
+          "call:3c095db4-1579-4c74-bc1b-9c729af246d0"
+        ],
+        "reason": "AUTHORITATIVE_RECORDS_MATCH"
+      }
+    ],
+    "method": "INDEPENDENT_RECORD_AUDIO_HASH_AND_SIGNATURE_CHECKS",
+    "required_audio_provenance": "BOLNA_WEBRTC",
+    "fixture_audio_allowed": false,
+    "conversation_quality_evaluated": false,
+    "replaces_pipecat_evals": false
+  }
+}

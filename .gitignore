@@ -1,0 +1,39 @@
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+*.p12
+*.pfx
+**/coordinator.json
+**/simulator.json
+**/provider.json
+**/*credentials*.json
+**/*secrets*.json
+# Private state and transient provider sessions
+runtime/
+work/
+private/
+logs/
+*.db
+*.sqlite
+*.sqlite3
+*.sqlite-wal
+*.sqlite-shm
+*.log
+# Dependencies and disposable build output
+.venv/
+venv/
+node_modules/
+.next/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+.DS_Store
+# Editors
+.idea/
+.vscode/

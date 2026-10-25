@@ -1,0 +1,12 @@
+{
+  "checkpoint": "query_and_enhancement_verified",
+  "passed": true,
+  "evidence_references": [
+    "incident:06b451bb-6e79-44d7-83fb-cae3386c8f0e",
+    "call:ef63ef73-8643-47f9-b325-97ccd49101dd",
+    "receipt:d30620f4-b3e0-4257-bf9d-a0f53343b20b",
+    "event:67119",
+    "document:473ec422-2ac2-41f2-bd74-d5bda27371db"
+  ],
+  "reason": "AUTHORITATIVE_RECORDS_MATCH"
+}

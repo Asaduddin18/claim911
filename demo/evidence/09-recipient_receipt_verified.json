@@ -1,0 +1,9 @@
+{
+  "checkpoint": "recipient_receipt_verified",
+  "passed": true,
+  "evidence_references": [
+    "incident:06b451bb-6e79-44d7-83fb-cae3386c8f0e",
+    "receipt:d30620f4-b3e0-4257-bf9d-a0f53343b20b"
+  ],
+  "reason": "AUTHORITATIVE_RECORDS_MATCH"
+}

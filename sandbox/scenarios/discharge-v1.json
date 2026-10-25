@@ -1,0 +1,97 @@
+{
+  "id": "cashless-discharge",
+  "version": 3,
+  "title": "A delayed discharge, explained and coordinated",
+  "environment": "sandbox",
+  "synthetic": true,
+  "default_transport": "SANDBOX_AUDIO",
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "release_languages": ["en"],
+  "institution_fixture": "../../fixtures/complex-discharge/case.json",
+  "participants": [
+    {
+      "role": "caregiver",
+      "knowledge_view": "caregiver",
+      "can_approve_disclosure": true
+    },
+    {
+      "role": "hospital_insurance",
+      "knowledge_view": "hospital_insurance_desk",
+      "institution_scope": "hospital"
+    },
+    {
+      "role": "billing",
+      "knowledge_view": "billing",
+      "institution_scope": "hospital"
+    },
+    {
+      "role": "medical_records",
+      "knowledge_view": "medical_records",
+      "institution_scope": "hospital"
+    },
+    {
+      "role": "implant_store",
+      "knowledge_view": "implant_store",
+      "institution_scope": "hospital"
+    },
+    {
+      "role": "tpa",
+      "knowledge_view": "tpa_desk",
+      "institution_scope": "claims"
+    },
+    {
+      "role": "insurer",
+      "knowledge_view": "insurer_reviewer",
+      "institution_scope": "insurer"
+    }
+  ],
+  "default_faults": [
+    "unsigned_summary"
+  ],
+  "available_faults": [
+    "unsigned_summary",
+    "wrong_admission_invoice",
+    "old_bill",
+    "withheld_receipt",
+    "pending_insurer",
+    "denied_insurer",
+    "consent_revoked",
+    "desk_unavailable",
+    "unknown_dispatch"
+  ],
+  "checkpoints": [
+    "caregiver_intake_confirmed",
+    "hospital_references_reported",
+    "claims_query_discovered",
+    "bill_checked",
+    "signed_summary_checked",
+    "implant_invoice_checked",
+    "exact_packet_approved",
+    "hospital_dispatch_recorded",
+    "recipient_receipt_verified",
+    "query_and_enhancement_verified",
+    "insurer_decision_verified",
+    "hospital_reconciliation_verified",
+    "caregiver_handoff_completed"
+  ],
+  "invariants": [
+    "no_real_phone_dispatch",
+    "no_cross_role_knowledge",
+    "no_institution_decision_by_coordinator",
+    "no_receipt_from_dispatch_only",
+    "no_refund_paid_without_payment_evidence"
+  ],
+  "limits": {
+    "max_turns_per_conversation": 20,
+    "max_callback_attempts_per_task": 2,
+    "max_run_minutes": 15
+  },
+  "expected_result": {
+    "incident_state": "DISCHARGE_CLEARED",
+    "refund_payment_state": "NOT_VERIFIED"
+  },
+  "status": "RUNNER_CONNECTED_VOICE_VERIFICATION_REQUIRED"
+}

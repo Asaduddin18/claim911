@@ -1,0 +1,11 @@
+{
+  "checkpoint": "hospital_reconciliation_verified",
+  "passed": true,
+  "evidence_references": [
+    "incident:06b451bb-6e79-44d7-83fb-cae3386c8f0e",
+    "call:78a56fbb-177b-46fc-860c-c5676b2a3fd0",
+    "event:67541",
+    "document:4599efb1-10f5-4429-b7f6-7d4f9f94a11a"
+  ],
+  "reason": "AUTHORITATIVE_RECORDS_MATCH"
+}
